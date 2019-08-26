@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <img src="../static/img/logo.png" alt="Logo" class="logo col-md-6 col-lg-6 col-sm-6">
+  <form action="/" method="POST">
+    <div class="form-group">
+      <h3>Client Name:</h3>
+      <input type="text" name="client" class="form-control form-control-lg" placeholder="e.g. Elon Musk" />
+    </div>
+    <div class="form-group">
+      <h3>Served by: </h3>
+      <select name="employee" class="form-control form-control-lg">
+        <option value="">Select Employee</option>
+        <option value="Samantha Wong">Samantha Wong</option>
+        <option value="Benjamin Leroy">Benjamin Leroy</option>
+        <option value="Jose Benitez">Jose Benitez</option>
+        <option value="Xin Pang">Xin Pang</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <h3>Rating of the service:</h3>
+      <select name="rating" class="form-control form-control-lg">
+        <option value="">Select Rating</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </div>
+    <div class="form-group">
+              <h3>Comments about your experience</h3>
+              <textarea
+                class="form-control"
+                name="comments"
+                id="comments"
+                placeholder="Tell us about the taste of the burger ! Is that good ?">
+                </textarea>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary btn-lg btn-block" />
+  </form>
+</div>
+{% endblock %}
